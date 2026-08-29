@@ -24,10 +24,6 @@ public class BunnyController {
      public BunnyController(BunnyServices bunnyServices){
             this.bunnyServices = bunnyServices;
         }
-
-
-    
-
         
 @RequestMapping
 public List<Bunny>ListarCoelhos(){

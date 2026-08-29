@@ -12,7 +12,7 @@ public class Bunny {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private String name;
     private int idade;
@@ -25,7 +25,7 @@ public class Bunny {
     public Bunny() {
     }
 
-    public Bunny(long id, String name, int idade, int raca, int tipo, int sexo, int reprodutor, int matriz) {
+    public Bunny(Long id, String name, int idade, int raca, int tipo, int sexo, int reprodutor, int matriz) {
     this.id = id;
     this.name = name;
     this.idade = idade;
@@ -36,7 +36,7 @@ public class Bunny {
     this.matriz = matriz;
 }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
