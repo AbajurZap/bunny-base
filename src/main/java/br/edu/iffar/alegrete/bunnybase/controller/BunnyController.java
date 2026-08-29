@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.edu.iffar.alegrete.bunnybase.model.Bunny;
 import br.edu.iffar.alegrete.bunnybase.services.BunnyServices;
 
-
 @RestController
 @RequestMapping("/bunny")
 public class BunnyController {

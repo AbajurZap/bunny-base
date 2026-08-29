@@ -27,8 +27,6 @@ public Optional<Bunny>BuscarCoelhoPorId(long id){
 public Bunny AdicionarCoelho(Bunny Bunny){
    return bunnyRepository.save(Bunny);
 
-
-
 }
 
 public void DeletarCoelho(Long id){
@@ -36,24 +34,4 @@ bunnyRepository.deleteById(id);
 
 
 }
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
