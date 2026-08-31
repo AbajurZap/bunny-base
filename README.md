@@ -1,0 +1,1 @@
+Bunny Base is the spiritual successor to my first full-stack project, CarrotLog, originally developed as my final course project (TCC). Built for rabbit farming (cuniculture), it features cleaner code, improved practices, and modern technologies, using Java with Spring Boot for the backend and Angular for the frontend.
