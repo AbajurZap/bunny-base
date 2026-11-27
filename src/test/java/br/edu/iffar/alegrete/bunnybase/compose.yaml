@@ -1,0 +1,26 @@
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: bunnybase-db
+    environment:
+      POSTGRES_DB: bunnydatabase
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: bunnybase-backend
+    environment:
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_URL: ${DB_URL}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
